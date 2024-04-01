@@ -1,6 +1,5 @@
 import Button from "@/components/btn";
 import { checkIfCookieIsSet, checkIfUserIsLoggedInOrNot } from "./actions";
-import { useRouter } from "next/router";
 
 export default async function Home() {
   const sessionId = await checkIfCookieIsSet();
@@ -32,7 +31,7 @@ export default async function Home() {
   ];
 
   return (
-    <main className="flex flex-col  justify-between p-24">
+    <main className="flex flex-col justify-between p-24">
       <div>
         <div className="flex justify-between">
           <div>
